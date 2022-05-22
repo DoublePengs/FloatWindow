@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.example.yhao.fixedfloatwindow.R;
 
-public class B_Activity extends BaseActivity {
+public class ActivityB extends BaseActivity {
 
 
     @Override
@@ -17,7 +17,7 @@ public class B_Activity extends BaseActivity {
     }
 
     public void change(View view) {
-        startActivity(new Intent(this, C_Activity.class));
+        startActivity(new Intent(this, ActivityC.class));
     }
 
     public void back(View view) {

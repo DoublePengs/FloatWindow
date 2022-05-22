@@ -1,7 +1,6 @@
 package com.example.yhao.floatwindow;
 
 import android.app.Application;
-import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.BounceInterpolator;
@@ -41,7 +40,7 @@ public class BaseApplication extends Application {
                 .setY(Screen.height, 0.3f)
                 .setMoveType(MoveType.slide,100,-100)
                 .setMoveStyle(500, new BounceInterpolator())
-                .setFilter(true, A_Activity.class, C_Activity.class)
+                .setFilter(true, ActivityA.class, ActivityC.class)
                 .setViewStateListener(mViewStateListener)
                 .setPermissionListener(mPermissionListener)
                 .setDesktopShow(true)
